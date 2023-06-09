@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+.anim1{
+    color: white;
+}
+#competence{
+ font-size: large;
+ font-weight: bold;
+ font-size: 200%;
+}
+.anim1 .mon_titre{ 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+ height: 20vh;  
+}
+.anim1 #competence{ 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0vh;
+}
+.anim1 .presentation{ 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250%;
+  height: 10vh; 
+}
+
+#accueil{
+    height:100vh;
+    background-image: url("../fichiers/images/image_fnd.png");
+    background-size: cover;
+}
+
+/* Styles de la barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    z-index: 999;
+    transition: top 0.3s ease-in-out;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90wv;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  .navbar-links {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-links.show-nav {
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 10px;
+  }
+  
+  .content {
+    height: 2000px; /* Exemple de contenu de la page */
+    padding-top: 60px; /* Espace pour éviter que le contenu soit masqué par la barre de navigation fixée */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block;
+    }
+    
+    .navbar-links {     
+      flex-direction: column;
+      padding-top: 10px;
+      margin-top: 0;
+    }
+  
+    .navbar-links li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .show-nav {
+      display: flex;
+    }
+}
+
+/* Styles des sections */
+section {
+    padding: 50px;
+}
+
+/* section cv*/
+.card {
+    width: 90wv;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+  }
+  
+  .skills {
+    margin: 10%;
+  }
+  .contact{
+    margin: 10%;
+  }
+  .skill {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .skill-name {
+    display: inline-block;
+    width: 120px;
+  }
+  
+  .progress-bar {
+    background-color: #f1f1f1;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  
+  .contact ul,
+  .education ul,
+  .experience ul,
+  .graduate ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .experience{
+    margin: 10%;
+  }
+  .graduate{
+    margin: 10%;
+  }
+  
+  .contact li,
+  .education li,
+  .experience li,
+  .graduate li {
+    margin-bottom: 10px;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cards-item {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .cards-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .cards-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .cards-item .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cards-item .icons a {
+    font-size: 24px;
+    color: #555555;
+  }
+  
+  .cards-item .icons a:hover {
+    color: #000000;
+  }
+  .container {
+    max-width: 90wv;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .container h2 {
+    text-align: center;
+  }
+  
+  .container input[type="text"],
+  .container input[type="email"],
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .container input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .video-container {
+    max-width: 45wv;
+    margin: 20px auto;
+  }
+  
+  .video-container video {
+    width: 100%;
+  }
+  .video-container img {
+    width: 100%;
+  }
+  
+/* Styles du pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
